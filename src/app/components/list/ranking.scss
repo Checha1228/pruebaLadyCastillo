@@ -1,0 +1,45 @@
+@import '../../../variables.scss';
+
+.ranking {
+	&__content {
+		margin-bottom: $size-base;
+		&--stars {
+			margin-top: $size-base-xs;
+		}
+	}
+
+	&__header {
+		align-items: center;
+		display: grid;
+		grid-template-columns: 0.8fr 1.2fr;
+		grid-gap: $size-base;
+		@include content-center;
+		margin-bottom: $size-base-xs;
+		width: 80%;
+		&--calification {
+			align-items: center;
+			border-left: 1px solid $color-gray-tint;
+			display: grid;
+			grid-template-columns: 0.8fr 1.2fr;
+			padding-left: $size-base;
+		}
+		&--text {
+			font-weight: 500;
+			@include center
+		}
+	}
+
+	&__body {
+		&--text {
+			color: $color-gray-shade;
+			font-size: 0.8rem;
+			font-weight: 500;
+			line-height: 1rem;
+			@include center;
+
+			strong {
+				color: $color-dark;
+			}
+		}
+	}
+}

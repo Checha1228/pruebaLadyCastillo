@@ -1,0 +1,21 @@
+@import '../../../../variables.scss';
+
+.block-booking {
+	background: url('../../../../assets/images/bubbles-bkg-img.png');
+	background-position: center;
+	height: 364px;
+	margin-bottom: $size-base-xxl;
+	width: 100%;
+
+	&__content {
+		padding-top: $size-base-m;
+		&--title {
+			color: $color-clear;
+			font-size: 1.1rem;
+			font-weight: 600;
+			margin-bottom: $size-base-s;
+			text-transform: uppercase;
+			@include center
+		}
+	}
+}

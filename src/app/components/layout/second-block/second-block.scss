@@ -1,0 +1,10 @@
+@import '../../../../variables.scss';
+
+.ranking {
+	&__list {
+		&--content {
+			margin-top: $size-base;
+		}
+	}
+}
+

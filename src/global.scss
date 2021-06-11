@@ -1,0 +1,33 @@
+@import 'variables.scss';
+
+* {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+input {
+	color: $color-dark;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.content-defaul {
+	@include content-center;
+	position: relative;
+	width: 90%;
+}

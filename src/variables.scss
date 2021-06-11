@@ -1,0 +1,29 @@
+$color-primary: #E6484B;
+$color-clear: #FFFFFF;
+$color-dark: #000000;
+$color-gray: #A0A0A0;
+$color-gray-tint: #DCDCE6; 
+$color-gray-shade: #6E6E6E; 
+$color-green: #00B67A;
+
+//Size
+$size-base-xs: 4px;
+$size-base-s: 8px;
+$size-base: 16px;
+$size-base-xm: 20px;
+$size-base-m: 24px;
+$size-base-l: 32px;
+$size-base-xl: 40px;
+$size-base-xxl: 48px;
+$size-base-xg: 56px;
+
+//
+@mixin center {
+	text-align: center;
+}
+@mixin content-center {
+	margin: 0 auto;
+}
+@mixin shadow {
+	box-shadow: 0px 3px 3px 0px rgba(20,0,0,0.06);
+}

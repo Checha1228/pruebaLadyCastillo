@@ -1,0 +1,178 @@
+@import '../../../variables.scss';
+
+.form {
+	@include content-center;
+	width: 90%;
+
+	&__group {
+		background: $color-clear;
+		border: 1px solid $color-gray-tint;
+		border-radius: $size-base-s;
+		@include shadow;
+		box-sizing: border-box;
+		height: 84px;
+		margin-bottom: $size-base;
+		padding: $size-base $size-base $size-base $size-base-xg;
+		position: relative;
+		width: 100%;
+		&--icon {
+			left: $size-base;
+			position: absolute;
+			top: 28px;
+		}
+
+		&--label {
+			color: $color-gray;
+			font-size: 0.8rem;
+			font-weight: 500;
+			&-white {
+				color: $color-clear;
+			}
+		}
+
+		&--input {
+			color: $color-dark;
+			font-size: 1.1rem;
+			font-weight: 600;
+			width: 100%;
+			&:focus,
+			&:active {
+				outline: 0;
+			}
+
+			&::placeholder {
+				color: $color-dark;
+			}
+
+		}
+
+		&--toogle {
+			align-items: center;
+			background: transparent;
+			border: 0;
+			border-radius: 0;
+			box-shadow: transparent;
+			display: flex;
+			height: auto;
+			margin-bottom: $size-base;
+			width: 100%;
+		}
+
+		&--range {
+			background: $color-clear;
+			border: 1px solid $color-gray-tint;
+			border-radius: $size-base-s;
+			@include shadow;
+			box-sizing: border-box;
+			height: 84px;
+			display: flex;
+			margin-bottom: $size-base;
+			position: relative;
+			width: 100%;
+		}
+	}
+
+	&__group-switch {
+		display: inline-block;
+		height: 20px;
+		margin-right: $size-base-s;
+		position: relative;
+		width: 36px;
+		&--input {
+			height: 0;
+			opacity: 0;
+			width: 0;
+			&:checked + 
+			.form__group-switch--slider {
+				background-color: $color-clear;
+				&:before {
+					background-color: $color-primary;
+					transform: translateX($size-base);
+				}
+			}
+
+		}
+		&--slider {
+			cursor: pointer;
+			border: 2px solid $color-clear;
+			border-radius: 100px;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			transition: .4s;
+			&:before {
+				background-color: $color-clear;
+				bottom: $size-base-xs;
+				border-radius: 100px;
+				content: "";
+				height: 12px;
+				left: 4px;
+				position: absolute;
+				top: 2px;
+				transition: .4s;
+				width: 12px;
+			}
+		}
+	}
+
+	&__datepicker {
+		&--start,
+		&--end {
+			position: relative;
+			padding: $size-base $size-base $size-base $size-base-xg;
+			&--icon {
+				left: $size-base;
+				position: absolute;
+				top: 28px;
+			}
+	
+			&--label {
+				color: $color-gray;
+				font-size: 0.8rem;
+				font-weight: 500;
+				&-white {
+					color: $color-clear;
+				}
+			}
+	
+			&--input {
+				color: $color-dark;
+				font-size: 1.1rem;
+				font-weight: 600;
+				width: 100%;
+				&:focus,
+				&:active {
+					outline: 0;
+				}
+	
+				&::placeholder {
+					color: $color-dark;
+				}
+			}
+		}
+
+		&--start {
+			border-right: 1px solid $color-gray-tint;
+		}
+	}
+}
+
+.button__content {
+	height: 60px;
+	position: absolute;
+	left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(28%);
+	width: 86px;
+
+	.button-icon {
+		background: $color-primary;
+		border: 6px solid $color-clear;
+		border-radius: 10px;
+		padding: $size-base-s;
+		width: 100%;
+		@include shadow
+	}
+}
